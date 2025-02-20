@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Lkoo - Hub de Recursos para Programação",
   description:
-    "O Lkoo é uma plataforma que reúne os melhores conteúdos gratuitos para desenvolvedores, incluindo cursos, livros, desafios, tutoriais e documentações. Com uma interface intuitiva e organizada por categorias.",
+    "O Lkoo é uma plataforma que reúne os melhores conteúdos gratuitos para desenvolvedores, incluindo cursos, livros, tutoriais e documentações. Com uma interface intuitiva e organizada por categorias.",
 };
 
 export default function RootLayout({
