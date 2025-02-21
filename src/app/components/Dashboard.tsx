@@ -53,7 +53,7 @@ const categories = [
   // { name: "Repositório", icon: GitBranch, color: "bg-gray-700" },
 ];
 
-const tools = [
+const links = [
   // Canais do YouTube
   {
     name: "Código Fonte TV",
@@ -384,7 +384,7 @@ export default function Dashboard() {
   });
 
   // Filtrar categorias e pesquisas
-  const filteredTools = tools.filter(
+  const filteredTools = links.filter(
     (tool) =>
       (selectedCategory === "Tudo" || tool.category === selectedCategory) &&
       tool.name.toLowerCase().includes(searchQuery.toLowerCase())
