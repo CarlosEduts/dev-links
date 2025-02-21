@@ -3,7 +3,9 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useReward } from "react-rewards";
 import {
+  Github,
   Search,
   Moon,
   Sun,
@@ -37,6 +39,7 @@ import {
   SidebarProvider,
   SidebarInset,
   SidebarTrigger,
+  SidebarFooter,
 } from "@/components/ui/sidebar";
 
 const categories = [
@@ -362,8 +365,8 @@ export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = React.useState("Tudo");
   const [searchQuery, setSearchQuery] = React.useState("");
 
+  // Função para adicionar o tema escuro
   const [isDarkTheme, setIsDarkTheme] = React.useState<string>("");
-
   const themeToggle = () => {
     if (!isDarkTheme) {
       setIsDarkTheme("dark");
@@ -372,6 +375,15 @@ export default function Dashboard() {
     }
   };
 
+  // Animação ao clicar no botão do coração
+  const { reward } = useReward("rewardId", "emoji", {
+    spread: 25,
+    elementCount: 18,
+    emoji: ["❤️", "💖"],
+    elementSize: 15,
+  });
+
+  // Filtrar categorias e pesquisas
   const filteredTools = tools.filter(
     (tool) =>
       (selectedCategory === "Tudo" || tool.category === selectedCategory) &&
@@ -393,12 +405,13 @@ export default function Dashboard() {
                 <SidebarMenuButton size="lg">
                   <Link className="h-6 w-6 text-primary" />
                   <span className="font-bold text-xl dark:text-white">
-                    Lkoo
+                    Dev Links
                   </span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
           </SidebarHeader>
+
           <SidebarContent>
             <SidebarGroup>
               <SidebarGroupLabel className="dark:text-white">
@@ -427,13 +440,33 @@ export default function Dashboard() {
               </SidebarGroupContent>
             </SidebarGroup>
           </SidebarContent>
+
+          <SidebarFooter>
+            <div className="text-xs opacity-90 text-center">
+              <p className="dark:text-white">
+                &copy; 2025 - Feito com{" "}
+                <button
+                  className="animate-pulse"
+                  id="rewardId"
+                  onClick={reward}
+                >
+                  &#10084;&#65039;
+                </button>{" "}
+                por{" "}
+                <a href="https://www.carlosdev.top/pt" target="_blank">
+                  Carlos
+                </a>
+                .
+              </p>
+            </div>
+          </SidebarFooter>
         </Sidebar>
 
         <SidebarInset className="overflow-auto">
           <header className="flex items-center justify-between p-4 border-b">
             <div className="flex items-center dark:text-white">
               <SidebarTrigger />
-              <h1 className="text-2xl font-bold ml-4">Links</h1>
+              <h1 className="text-2xl font-bold ml-4 hidden md:block">Links</h1>
             </div>
             <div className="flex items-center space-x-4">
               <div className="relative">
@@ -446,6 +479,7 @@ export default function Dashboard() {
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
               </div>
+
               <Button variant="outline" size="icon" onClick={themeToggle}>
                 {isDarkTheme ? (
                   <Sun className="h-4 w-4 dark:text-white" />
@@ -453,6 +487,15 @@ export default function Dashboard() {
                   <Moon className="h-4 w-4 dark:text-white" />
                 )}
               </Button>
+
+              <a
+                href="https://github.com/CarlosEduts/dev-links"
+                target="_blank"
+              >
+                <Button variant="outline" size="icon">
+                  <Github className="h-4 w-4 dark:text-white" />
+                </Button>
+              </a>
             </div>
           </header>
 
