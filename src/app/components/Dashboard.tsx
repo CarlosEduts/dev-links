@@ -398,7 +398,13 @@ export default function Dashboard() {
   return (
     <SidebarProvider className={isDarkTheme}>
       <div className="flex h-screen overflow-hidden">
-        <Sidebar className="bg-background">
+        <Sidebar
+          className={
+            isDarkTheme
+              ? "bg-zinc-950 md:bg-background text-white"
+              : "bg-background"
+          }
+        >
           <SidebarHeader>
             <SidebarMenu>
               <SidebarMenuItem>
