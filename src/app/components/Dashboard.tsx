@@ -193,30 +193,6 @@ const links = [
       "Documentação e tutoriais da Mozilla sobre desenvolvimento web.",
     link: "https://developer.mozilla.org/pt-BR/",
   },
-  {
-    name: "Prime Cursos",
-    category: "Cursos Grátis",
-    icon: Code,
-    description:
-      "Cursos online gratuitos de programação com certificado de conclusão opcional.",
-    link: "https://www.primecursos.com.br/",
-  },
-  {
-    name: "Cursou",
-    category: "Cursos Grátis",
-    icon: Code,
-    description:
-      "Plataforma com cursos gratuitos em diversas linguagens de programação.",
-    link: "https://www.cursou.com.br/",
-  },
-  {
-    name: "Programaê!",
-    category: "Cursos Grátis",
-    icon: Code,
-    description:
-      "Iniciativa que oferece recursos para iniciantes em programação.",
-    link: "https://programae.org.br/",
-  },
 
   // Artigos e Sites Educativos
   {
@@ -260,14 +236,6 @@ const links = [
     link: "https://www.reddit.com/r/learnprogramming/",
   },
   {
-    name: "Estudar Fora",
-    category: "Artigos",
-    icon: PenTool,
-    description:
-      "Artigo destacando cursos online gratuitos de instituições renomadas.",
-    link: "https://www.estudarfora.org.br/cursos/",
-  },
-  {
     name: "Le Wagon",
     category: "Artigos",
     icon: PenTool,
@@ -275,23 +243,8 @@ const links = [
       "Artigo sobre os melhores canais do YouTube para aprender programação.",
     link: "https://www.lewagon.com/blog/melhores-canais-youtube-para-aprender-programar",
   },
-  {
-    name: "Locaweb",
-    category: "Artigos",
-    icon: PenTool,
-    description: "Artigo listando 8 cursos de programação gratuitos e online.",
-    link: "https://www.locaweb.com.br/blog/temas/codigo-aberto/curso-de-programacao/?utm_source=chatgpt.com",
-  },
 
   // Livros Gratuitos
-  {
-    name: "C Programming: A Modern Approach",
-    category: "Livros",
-    icon: Book,
-    description:
-      "Livro recomendado para aprender a linguagem C de forma abrangente.",
-    link: "https://www.amazon.com/C-Programming-Modern-Approach-2nd/dp/0393979504",
-  },
   {
     name: "Automate the Boring Stuff with Python",
     category: "Livros",
@@ -342,14 +295,6 @@ const links = [
     description:
       "Material do curso introdutório de ciência da computação de Harvard.",
     link: "https://cs50.harvard.edu/college/2020/fall/",
-  },
-  {
-    name: "Introduction to the Command Line",
-    category: "Livros",
-    icon: Book,
-    description:
-      "Guia para aprender o básico do uso do terminal e linha de comando.",
-    link: "https://learnenough.com/command-line-tutorial",
   },
   {
     name: "Pro Git",
