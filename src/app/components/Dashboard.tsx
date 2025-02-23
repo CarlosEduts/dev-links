@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useReward } from "react-rewards";
 import {
-  Github,
+  FolderCode,
   Search,
   Moon,
   Sun,
@@ -324,7 +324,7 @@ export default function Dashboard() {
   const { reward } = useReward("rewardId", "emoji", {
     spread: 25,
     elementCount: 18,
-    emoji: ["❤️", "💖"],
+    emoji: ["❤️", "💚", "🩷", "💙", "💜"],
     elementSize: 15,
   });
 
@@ -346,7 +346,7 @@ export default function Dashboard() {
         <Sidebar
           className={
             isDarkTheme
-              ? "bg-zinc-950 md:bg-background text-white"
+              ? "bg-zinc-900 md:bg-background text-white"
               : "bg-background"
           }
         >
@@ -416,10 +416,10 @@ export default function Dashboard() {
         <SidebarInset className="overflow-auto">
           <header className="flex items-center justify-between p-4 border-b">
             <div className="flex items-center dark:text-white">
-              <SidebarTrigger />
+              <SidebarTrigger variant="outline" className="p-[17px] mr-2" />
               <h1 className="text-2xl font-bold ml-4 hidden md:block">Links</h1>
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
               <div className="relative">
                 <Search className="w-4 h-4 absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Input
@@ -431,7 +431,13 @@ export default function Dashboard() {
                 />
               </div>
 
-              <Button variant="outline" size="icon" onClick={themeToggle}>
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={themeToggle}
+                title="Tema"
+                className="min-w-9"
+              >
                 {isDarkTheme ? (
                   <Sun className="h-4 w-4 dark:text-white" />
                 ) : (
@@ -442,9 +448,10 @@ export default function Dashboard() {
               <a
                 href="https://github.com/CarlosEduts/dev-links"
                 target="_blank"
+                title="Código fonte"
               >
-                <Button variant="outline" size="icon">
-                  <Github className="h-4 w-4 dark:text-white" />
+                <Button variant="outline" size="icon" title="Código fonte">
+                  <FolderCode className="h-4 w-4 dark:text-white" />
                 </Button>
               </a>
             </div>
@@ -472,7 +479,7 @@ export default function Dashboard() {
                   </CardHeader>
                   <CardContent>
                     <p>{tool.description}</p>
-                    <a href={tool.link} target="_blank">
+                    <a href={tool.link} target="_blank" title={tool.link}>
                       <Button className="w-full mt-3">Acesse a página</Button>
                     </a>
                   </CardContent>
