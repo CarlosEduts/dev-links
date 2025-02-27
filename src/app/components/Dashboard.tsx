@@ -135,6 +135,46 @@ const links = [
       "Tutoriais abrangentes sobre várias linguagens de programação em inglês.",
     link: "https://www.youtube.com/user/programmingwithmosh",
   },
+  {
+    name: "CFB Cursos",
+    category: "YouTube",
+    icon: Tv,
+    description:
+      "Cursos gratuitos e tutoriais sobre programação e tecnologia, ensinados de maneira prática.",
+    link: "https://www.youtube.com/@cfbcursos",
+  },
+  {
+    name: "UnSet",
+    category: "YouTube",
+    icon: Tv,
+    description:
+      "Canal com tutoriais, dicas e insights sobre desenvolvimento de software e tecnologias digitais.",
+    link: "https://www.youtube.com/@UnSet",
+  },
+  {
+    name: "Lucas Montano",
+    category: "YouTube",
+    icon: Tv,
+    description:
+      "Conteúdo sobre desenvolvimento, abordando temas de programação e tecnologia.",
+    link: "https://www.youtube.com/@LucasMontano",
+  },
+  {
+    name: "Glaucia Lemos",
+    category: "YouTube",
+    icon: Tv,
+    description:
+      "Tutoriais e dicas de programação com foco em desenvolvimento web e soluções práticas.",
+    link: "https://www.youtube.com/@GlauciaLemos",
+  },
+  {
+    name: "Matheus Battisti",
+    category: "YouTube",
+    icon: Tv,
+    description:
+      "Canal dedicado a ensinar programação e desenvolvimento web com tutoriais práticos e conteúdos de tecnologia.",
+    link: "https://www.youtube.com/@MatheusBattisti",
+  },
 
   // Cursos Online Gratuitos
   {
@@ -146,12 +186,12 @@ const links = [
     link: "https://www.khanacademy.org/computing/computer-programming",
   },
   {
-    name: "Coursera",
+    name: "Codeguage",
     category: "Cursos Grátis",
     icon: Code,
     description:
-      "Plataforma com cursos gratuitos de instituições renomadas em diversas linguagens.",
-    link: "https://www.coursera.org/",
+      "Plataforma que oferece cursos para desenvolver uma base sólida em programação, com foco em fundamentos e práticas essenciais.",
+    link: "https://www.codeguage.com/",
   },
   {
     name: "Codecademy",
@@ -176,14 +216,6 @@ const links = [
     description:
       "Plataforma que oferece cursos gratuitos de universidades como Harvard e MIT.",
     link: "https://www.edx.org/",
-  },
-  {
-    name: "Udemy",
-    category: "Cursos Grátis",
-    icon: Code,
-    description:
-      "Variedade de cursos gratuitos em programação e desenvolvimento de software.",
-    link: "https://www.udemy.com/",
   },
   {
     name: "MDN Web Docs",
