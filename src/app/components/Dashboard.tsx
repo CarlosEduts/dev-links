@@ -223,26 +223,10 @@ const links = [
     icon: Library,
     description:
       "Documentação e tutoriais da Mozilla sobre desenvolvimento web.",
-    link: "https://developer.mozilla.org/pt-BR/",
+    link: "https://developer.mozilla.org/pt-BR/docs/Learn_web_development",
   },
 
   // Artigos e Sites Educativos
-  {
-    name: "Tecnoblog",
-    category: "Artigos",
-    icon: PenTool,
-    description:
-      "Artigo listando 9 sites para aprender a programar gratuitamente.",
-    link: "https://tecnoblog.net/meiobit/9-sites-para-aprender-programacao-de-graca/",
-  },
-  {
-    name: "Hostinger",
-    category: "Artigos",
-    icon: PenTool,
-    description:
-      "Lista de mais de 100 sites para aprender programação de graça.",
-    link: "https://www.hostinger.com.br/tutoriais/sites-para-aprender-programacao-gratis",
-  },
   {
     name: "Dev.to",
     category: "Artigos",
@@ -256,8 +240,8 @@ const links = [
     category: "Artigos",
     icon: PenTool,
     description:
-      "Discussões e artigos sobre os melhores canais de programação no YouTube.",
-    link: "https://www.tabnews.com.br/GabrielSozinho/melhores-canais-de-programacao-e-tecnologia-do-youtube",
+      "Discussões e artigos sobre tecnologia.",
+    link: "https://www.tabnews.com.br",
   },
   {
     name: "Reddit - r/learnprogramming",
